@@ -28,7 +28,7 @@ function [vicon_time, vicon_readings, acc_time, acc_readings] = load_nri(dir, mo
         error('vicon model not found');
     end
     
-    vicon_readings = zeros(length(vicon.(t)), 7);
+    vicon_readings = zeros(length(vicon.(t)), 6);
     vicon_time = vicon.(t);
     vicon_readings(:,1) = vicon.(tx);
     vicon_readings(:,2) = vicon.(ty);
